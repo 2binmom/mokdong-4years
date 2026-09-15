@@ -153,8 +153,10 @@
   .dot.active{background:var(--pink-deep); width:18px; border-radius:999px;}
 
   .page-counter{
-    text-align:center; font-size:12.5px; color:var(--sub); font-weight:700;
-    padding:0 16px 12px; flex-shrink:0;
+    position:absolute; left:50%; bottom:16px; transform:translateX(-50%); z-index:4;
+    font-size:12px; color:var(--pink-deep); font-weight:800;
+    background:rgba(255,255,255,0.82); backdrop-filter:blur(3px);
+    padding:4px 12px; border-radius:999px;
   }
 
   footer{
@@ -302,7 +304,7 @@
           <p class="closing-line">“전세인지 매매인지 무엇이 중요하리.<br>우리 모두 아이 교육이 제일 고민인 것을.”</p>
           <div class="follow-box">
             <img class="avatar" src="logo-follow.png" alt="투빈맘">
-            <p class="follow-line">이런 학군지 리얼 토크, 더 자주 보고 싶다면<br><strong>@2bin_mom</strong> 팔로우하고 함께해요 💗</p>
+            <p class="follow-line">이런 학군지 리얼 토크,<br>더 자주 보고 싶다면<br><strong>@2bin_mom</strong> 팔로우하고 함께해요 💗</p>
             <a class="insta" href="https://www.instagram.com/2bin_mom/?hl=ko" target="_blank" rel="noopener">👉 @2bin_mom 팔로우하기</a>
           </div>
         </div>
@@ -310,11 +312,11 @@
 
     </div>
     <button class="nav-btn next" id="btnNext" aria-label="다음">›</button>
+    <div class="page-counter" id="pageCounter">1 / 14</div>
   </div>
 </div>
 
 <div class="dots" id="dots"></div>
-<div class="page-counter" id="pageCounter">1 / 14</div>
 <footer>© 2026 투빈맘 · 무단 복제·배포 금지</footer>
 
 <script>
